@@ -1,4 +1,4 @@
-aiobotocore @ file:///C:/b/abs_a0zxrsvpwx/croot/aiobotocore_1714464454692/work
+aiobotocore==3.7
 aiofiles==24.1.0
 aiohappyeyeballs @ file:///C:/b/abs_b505trsapr/croot/aiohappyeyeballs_1725434036096/work
 aiohttp @ file:///C:/b/abs_13j6efxjb7/croot/aiohttp_1725529348885/work

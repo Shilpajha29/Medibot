@@ -438,3 +438,5 @@ zict @ file:///C:/Users/dev-admin/perseverance-python-buildout/croot/zict_169954
 zipp==3.21.0
 zope.interface==7.2
 zstandard @ file:///C:/b/abs_82dff2ths3/croot/zstandard_1728569207191/work
+
+pip==25.0.1

@@ -1,4 +1,4 @@
-aiobotocore==3.7.0
+aiobotocore==2.12.3
 aiofiles==24.1.0
 aiohappyeyeballs
 aiohttp

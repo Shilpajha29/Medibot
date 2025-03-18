@@ -11,6 +11,7 @@ idna==3.10
 Jinja2==3.1.6
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
+langchain==0.3.20
 MarkupSafe==3.0.2
 narwhals==1.31.0
 numpy==2.2.4

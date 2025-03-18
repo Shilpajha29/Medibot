@@ -44,15 +44,15 @@ def main():
         st.session_state.messages.append({'role':'user', 'content': prompt})
 
         CUSTOM_PROMPT_TEMPLATE = """
-                Use the pieces of information provided in the context to answer user's question.
-                If you dont know the answer, just say that you dont know, dont try to make up an answer. 
-                Dont provide anything out of the given context
+            Use the pieces of information provided in the context to answer user's question.
+            If you dont know the answer, just say that you dont know, dont try to make up an answer. 
+            Dont provide anything out of the given context
 
-                Context: {context}
-                Question: {question}
+            Context: {context}
+            Question: {question}
 
-                Start the answer directly. No small talk please.
-                """
+            Start the answer directly. No small talk please.
+        """
         
         HUGGING_FACE_REPO_ID="mistralai/Mistral-7B-Instruct-v0.3"
         HF_TOKEN=os.environ.get("HF_TOKEN")
@@ -61,6 +61,7 @@ def main():
             vectorstore=get_vectorstore()
             if vectorstore is None:
                 st.error("Failed to load the vector store")
+                return
 
             qa_chain=RetrievalQA.from_chain_type(
                 llm=load_llm(huggingface_repo_id=HUGGING_FACE_REPO_ID, HF_TOKEN=HF_TOKEN),
